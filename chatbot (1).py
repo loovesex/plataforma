@@ -80,9 +80,6 @@ class Config:
     CHECKOUT_START = "https://checkout.vendeagora.com/api/public/shopify?product=436148779821&store=4361"
     CHECKOUT_PREMIUM = "https://checkout.vendeagora.com/api/public/shopify?product=436129919379&store=4361"
     CHECKOUT_EXTREME = "https://checkout.vendeagora.com/api/public/shopify?product=436149587759&store=4361"
-    CHECKOUT_VIP_1MES = "https://checkout.exemplo.com/vip-1mes"
-    CHECKOUT_VIP_3MESES = "https://checkout.exemplo.com/vip-3meses"
-    CHECKOUT_VIP_1ANO = "https://checkout.exemplo.com/vip-1ano"
     MAX_REQUESTS_PER_SESSION = 30
     REQUEST_TIMEOUT = 30
     AUDIO_FILE = "https://github.com/loovesex/plataforma/raw/refs/heads/main/assets/assets_audio_paloma_audio.mp3"
