@@ -1,4 +1,4 @@
-F# ======================
+# ======================
 # IMPORTAÇÕES
 # ======================
 import streamlit as st
@@ -74,15 +74,18 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # CONSTANTES E CONFIGURAÇÕES
 # ======================
 class Config:
-    API_KEY = "AIzaSyB1Te3Iv5Tyi8DgG45pvuq9CjVjY-rV004"
+    API_KEY = "AIzaSyDTaYm2KHHnVPdWy4l5pEaGPM7QR0g3IPc"
     API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
     VIP_LINK = "https://exemplo.com/vip"
-    CHECKOUT_START = "https://checkout.vendeagora.com/api/public/shopify?product=436148779821&store=4361"
-    CHECKOUT_PREMIUM = "https://checkout.vendeagora.com/api/public/shopify?product=436129919379&store=4361"
-    CHECKOUT_EXTREME = "https://checkout.vendeagora.com/api/public/shopify?product=436149587759&store=4361"
+    CHECKOUT_START = "https://checkout.exemplo.com/start"
+    CHECKOUT_PREMIUM = "https://checkout.exemplo.com/premium"
+    CHECKOUT_EXTREME = "https://checkout.exemplo.com/extreme"
+    CHECKOUT_VIP_1MES = "https://checkout.exemplo.com/vip-1mes"
+    CHECKOUT_VIP_3MESES = "https://checkout.exemplo.com/vip-3meses"
+    CHECKOUT_VIP_1ANO = "https://checkout.exemplo.com/vip-1ano"
     MAX_REQUESTS_PER_SESSION = 30
     REQUEST_TIMEOUT = 30
-    AUDIO_FILE = "https://github.com/loovesex/plataforma/raw/refs/heads/main/assets/assets_audio_paloma_audio.mp3"
+    AUDIO_FILE = "https://github.com/gustapb77/ChatBotHot/raw/refs/heads/main/assets/audio/paloma_audio.mp3"
     AUDIO_DURATION = 7
     IMG_PROFILE = "https://i.ibb.co/ks5CNrDn/IMG-9256.jpg"
     IMG_GALLERY = [
@@ -1113,7 +1116,7 @@ class NewPages:
         <div class="package-box package-start">
             <div class="package-header">
                 <h3 style="color: #ff66b3;">START</h3>
-                <div class="package-price" style="color: #ff66b3;">R$ 19,00</div>
+                <div class="package-price" style="color: #ff66b3;">R$ 49,90</div>
                 <small>para iniciantes</small>
             </div>
             <ul class="package-benefits">
@@ -1148,7 +1151,7 @@ class NewPages:
             <div class="package-badge">POPULAR</div>
             <div class="package-header">
                 <h3 style="color: #9400d3;">PREMIUM</h3>
-                <div class="package-price" style="color: #9400d3;">R$ 29,00</div>
+                <div class="package-price" style="color: #9400d3;">R$ 99,90</div>
                 <small>experiência completa</small>
             </div>
             <ul class="package-benefits">
@@ -1184,7 +1187,7 @@ class NewPages:
         <div class="package-box package-extreme">
             <div class="package-header">
                 <h3 style="color: #ff0066;">EXTREME</h3>
-                <div class="package-price" style="color: #ff0066;">R$ 39,00</div>
+                <div class="package-price" style="color: #ff0066;">R$ 199,90</div>
                 <small>para verdadeiros fãs</small>
             </div>
             <ul class="package-benefits">
@@ -1254,6 +1257,30 @@ class NewPages:
         </script>
         """, height=0)
 
+        plans = [
+            {
+                "name": "1 Mês",
+                "price": "R$ 29,90",
+                "original": "R$ 49,90",
+                "benefits": ["Acesso total", "Conteúdo novo diário", "Chat privado"],
+                "tag": "COMUM",
+                "link": Config.CHECKOUT_VIP_1MES + "?plan=1mes"
+            },
+            {
+                "name": "3 Meses",
+                "price": "R$ 69,90",
+                "original": "R$ 149,70",
+                "benefits": ["25% de desconto", "Bônus: 1 vídeo exclusivo", "Prioridade no chat"],
+                "tag": "MAIS POPULAR",
+                "link": Config.CHECKOUT_VIP_3MESES + "?plan=3meses"
+            },
+            {
+                "name": "1 Ano",
+                "price": "R$ 199,90",
+                "original": "R$ 598,80",
+                "benefits": ["66% de desconto", "Presente surpresa mensal", "Acesso a conteúdos raros"],
+                "tag": "MELHOR CUSTO-BENEFÍCIO",
+                "link": Config.CHECKOUT_VIP_1ANO + "?plan=1ano"
             }
         ]
 
