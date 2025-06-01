@@ -1116,7 +1116,7 @@ class NewPages:
         <div class="package-box package-start">
             <div class="package-header">
                 <h3 style="color: #ff66b3;">START</h3>
-                <div class="package-price" style="color: #ff66b3;">R$ 49,90</div>
+                <div class="package-price" style="color: #ff66b3;">R$ 19,00</div>
                 <small>para iniciantes</small>
             </div>
             <ul class="package-benefits">
@@ -1151,7 +1151,7 @@ class NewPages:
             <div class="package-badge">POPULAR</div>
             <div class="package-header">
                 <h3 style="color: #9400d3;">PREMIUM</h3>
-                <div class="package-price" style="color: #9400d3;">R$ 99,90</div>
+                <div class="package-price" style="color: #9400d3;">R$ 29,00</div>
                 <small>experiência completa</small>
             </div>
             <ul class="package-benefits">
@@ -1187,7 +1187,7 @@ class NewPages:
         <div class="package-box package-extreme">
             <div class="package-header">
                 <h3 style="color: #ff0066;">EXTREME</h3>
-                <div class="package-price" style="color: #ff0066;">R$ 199,90</div>
+                <div class="package-price" style="color: #ff0066;">R$ 39,00</div>
                 <small>para verdadeiros fãs</small>
             </div>
             <ul class="package-benefits">
