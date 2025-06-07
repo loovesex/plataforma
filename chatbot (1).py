@@ -1256,8 +1256,6 @@ class NewPages:
         setTimeout(updateCountdown, 1000);
         </script>
         """, height=0)
-
-        plans = [
        
             }
         ]
